@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <style>
+      * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+      }
+      a {
+        text-decoration: none !important;
+        color: black !important;
+      }
+      button {
+        background-color: white !important;
+        transition: all ease-in-out 0.5s !important;
+        a {
+          transition: all ease-in-out 0.5s !important;
+        }
+      }
+      button:hover a {
+        color: blue !important;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+      #navbar,
+      #country {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+      #newsData {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        div {
+          width: 280px;
+          text-align: justify;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        #content {
+          font-weight: 500;
+          font-size: 17px;
+        }
+
+        img {
+          width: 94%;
+        }
+      }
+      .title {
+        text-transform: capitalize;
+        font-weight: 700;
+      }
+      .ctry,
+      #email {
+        font-weight: 700;
+      }
+      #userForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        text-align: justify;
+      }
+      .fa-solid {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="sidebar">
+          <h2>User Profile</h2>
+          
+      </div>
+        <div class="col-3">
+          <div id="userForm" class="m-3">
+            
+          </div>
+          <div id="profileInfo">
+            <p><strong>Username:</strong> JAYESH REPORTER </p>
+            <p><strong>Email:</strong> jP@example.com</p>
+            <p><strong>Bio:</strong> Award in Nobel Prize </p>
+        </div>
+        </div>
+        <div class="col-9">
+          <div class="d-flex justify-content-around" id="navbar">
+            <div class="my-3">
+              <button class="border-0"><a href="./index.html">Home</a></button>
+            </div>
+            <div class="my-3">
+              <button class="border-0">
+                <a href="./addNews.html">Add News +</a>
+              </button>
+            </div>
+            <div class="my-3">
+              <button class="border-0"><a href="./login.html">Login</a></button>
+            </div>
+            <div class="my-3">
+              <button class="border-0">
+                <a href="./signUp.html">Sign Up</a>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-around my-2" id="country">
+            <div class="my-3">
+              <button class="border-0" country="All">All</button>
+            </div>
+            <div class="my-3">
+              <button class="border-0" country="India">India</button>
+            </div>
+            <div class="my-3">
+              <button class="border-0" country="America">America</button>
+            </div>
+            <div class="my-3">
+              <button class="border-0" country="Germany">Germany</button>
+            </div>
+            <div class="my-3">
+              <button class="border-0" country="England">England</button>
+            </div>
+            <div class="my-3">
+              <button class="border-0" country="France">France</button>
+            </div>
+          </div>
+          <div id="newsData" class="my-3"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../JS/index.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>
